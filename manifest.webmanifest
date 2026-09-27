@@ -1,0 +1,80 @@
+{
+  "name": "Panda",
+  "short_name": "Panda",
+  "description": "Panda — mesa de processos da Secretaria Municipal de Infraestrutura e Defesa Civil de Ilhéus: documentos no padrão MPI, ficha central, REVIT, notas, relatórios e PDF com brasão e carimbo. Funciona sem internet.",
+  "id": "./",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#e9eef4",
+  "theme_color": "#d6e3f1",
+  "lang": "pt-BR",
+  "icons": [
+    {
+      "src": "icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "icons/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "share_target": {
+    "action": "./share-target",
+    "method": "POST",
+    "enctype": "multipart/form-data",
+    "params": {
+      "title": "title",
+      "text": "text",
+      "url": "url",
+      "files": [
+        {
+          "name": "files",
+          "accept": [
+            "application/pdf",
+            ".pdf",
+            "image/*",
+            ".jpg",
+            ".jpeg",
+            ".png",
+            "application/zip",
+            "application/x-zip-compressed",
+            ".zip"
+          ]
+        }
+      ]
+    }
+  },
+  "shortcuts": [
+    {
+      "name": "Novo documento",
+      "short_name": "Novo documento",
+      "url": "./?novo=1",
+      "icons": [
+        {
+          "src": "icons/icon-192.png",
+          "sizes": "192x192"
+        }
+      ]
+    },
+    {
+      "name": "PDF",
+      "short_name": "PDF",
+      "url": "./?view=otim",
+      "icons": [
+        {
+          "src": "icons/icon-192.png",
+          "sizes": "192x192"
+        }
+      ]
+    }
+  ]
+}

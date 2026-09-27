@@ -1,0 +1,46 @@
+PANDA — COMO INSTALAR NO CELULAR
+(app da Secretaria Municipal de Infraestrutura e Defesa Civil de Ilhéus · versão V1.SMDIEDC)
+
+Este pacote é o app completo, com as ferramentas de PDF dentro dele.
+Depois de instalado, funciona sem internet e não depende de nenhum site.
+
+1. HOSPEDAR (uma vez só, pelo computador ou pelo Chrome Remote Desktop)
+   a) Entre em github.com (conta grátis).
+   b) Se você já publicou o Proc.Ios antes: abra o MESMO repositório e envie
+      todos os arquivos deste pacote por cima dos antigos. Assim o Panda abre
+      no mesmo endereço e traz sozinho os seus processos, textos e PDFs.
+      Se é a primeira vez: "+" > "New repository" > nome: panda > "Public" > "Create repository".
+   c) Clique em "uploading an existing file", descompacte este ZIP e arraste TODO o
+      conteúdo (index.html, app.js, sw.js, manifest.webmanifest, LEIA-ME.txt e as
+      pastas icons e vendor). Clique em "Commit changes".
+   d) Settings > Pages > "Deploy from a branch" > branch "main", pasta "/ (root)" > Save.
+   e) Em 1 a 2 minutos o app estará em: https://SEU-USUARIO.github.io/NOME-DO-REPOSITORIO/
+
+2. INSTALAR NO CELULAR
+   a) Abra o endereço acima no Chrome do celular.
+   b) Menu (três pontinhos) > "Instalar app" > Instalar. O ícone é o panda.
+   c) Segurando o ícone aparecem os atalhos "Novo documento" e "PDF".
+
+3. SE VOCÊ JÁ USAVA O PROC.IOS NO MESMO ENDEREÇO
+   Na primeira vez que abrir, o Panda traz sozinho os processos, textos e PDFs
+   que já estavam ali. Um backup também pode ser acrescentado em
+   Ajustes > Restaurar backup.
+
+4. RECEBER ARQUIVOS DO WHATSAPP
+   No WhatsApp, segure o PDF, foto ou ZIP > Compartilhar > Panda.
+   Os arquivos entram nos Avulsos (no ZIP você escolhe o que entra).
+   Pelo ⋯ de cada documento dá para mover para o processo certo.
+   Texto compartilhado entra como texto pronto.
+
+5. REVISÃO POR IA NO APP INSTALADO (opcional)
+   Ajustes > Revisão de texto: cole a sua chave de API do Claude
+   (console.anthropic.com) ou do Gemini (aistudio.google.com).
+   A chave fica só no celular. Sem chave, o botão R copia o trecho e abre
+   o Claude ou o Gemini para você colar.
+
+OBSERVAÇÕES
+- Os dados ficam só no celular. Faça backup de vez em quando (Ajustes > Fazer backup)
+  e guarde o ZIP no Drive.
+- O repositório público contém só o código do app, nunca os seus processos.
+- Bibliotecas incluídas: pdf-lib (MIT), JSZip (MIT), PDF.js (Apache 2.0),
+  fontes Liberation Sans (SIL OFL). As licenças estão na pasta vendor.
